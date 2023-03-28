@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  ssr: {
+    noExternal: ["swiper"]
+ }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

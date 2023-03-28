@@ -1,91 +1,38 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+import Hero from '../sections/Hero';
+import BestFood from '@/sections/BestFood';
+import About from '@/sections/About';
+import Menu from '@/sections/Menu';
+import Explore from '@/sections/Explore';
+import TheySaid from '@/sections/TheySaid';
+import LearnMore from '@/sections/LearnMore';
+import OrderNow from '@/sections/OrderNow';
+import Footer from '@/components/Footer';
+import { ScrollToTop } from '@/sections/ScrollToTop';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default async function Page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className='overflow-visible font-Arabic h-[100vh] relative before:content-[""] before:absolute before:z-[-1] before:left-52 md:before:left-[800px] before:-top-14 md:before:-top-80 before:w-96 before:h-96 md:before:w-[800px] md:before:h-[800px] before:rounded-full before:bg-gradient-radial' >
+        <div className="px-7 pt-4 md:px-20 md:pt-5">
+        <Navbar  />
+        <Hero />
+        <BestFood />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <About />
+        <Menu />
+        <div className="px-7 pt-4 md:px-20 md:pt-5">
+          <Explore />
+          <TheySaid />
         </div>
+        <LearnMore />
+        <div className="px-7 pt-4 md:px-20 md:pt-5">
+          <OrderNow />
+          <Footer />
+        </div>
+        <ScrollToTop />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }
