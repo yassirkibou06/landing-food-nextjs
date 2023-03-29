@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Navbar from '@/components/Navbar';
-import Hero from '../sections/Hero';
+import NavBar from '@/components/Navbar';
+import Hero from '@/sections/Hero';
 import BestFood from '@/sections/BestFood';
 import About from '@/sections/About';
 import Menu from '@/sections/Menu';
@@ -16,7 +16,7 @@ export default async function Page() {
     <>
       <div className='overflow-visible font-Arabic h-[100vh] relative before:content-[""] before:absolute before:z-[-1] before:left-52 md:before:left-[800px] before:-top-14 md:before:-top-80 before:w-96 before:h-96 md:before:w-[800px] md:before:h-[800px] before:rounded-full before:bg-gradient-radial' >
         <div className="px-7 pt-4 md:px-20 md:pt-5">
-        <Navbar  />
+        <NavBar />
         <Hero />
         <BestFood />
         </div>
