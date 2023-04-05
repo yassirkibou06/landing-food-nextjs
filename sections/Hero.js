@@ -25,7 +25,7 @@ const Hero = () => {
         <motion.div className='left'>
           <motion.h2 variants={textVariant(1.1)} className="font-bold text-first text-lg md:text-3xl mb-2 md:mb-3" >{heroSection.hero_title_one}</motion.h2>
           <motion.h1 variants={textVariant(1.2)} className={`font-bold text-3xl md:text-6xl w-52 md:w-[25rem] mb-4 md:mb-5 leading-10 md:leading-[85px]`}>{heroSection.hero_title_two}</motion.h1>
-          <motion.p variants={textVariant(1.3)} className={`font-normal leading-6 text-sm w-[25rem] mb-4 md:mb-5 md:text-lg`}>{heroSection.hero_p}</motion.p>
+          <motion.p variants={textVariant(1.3)} className={`font-normal leading-6 text-sm w-[85%] mb-4 md:mb-5 md:text-lg`}>{heroSection.hero_p}</motion.p>
           <motion.div variants={textVariant(1.4)} className='inline-flex z-10 px-5 py-2 md:px-8 md:py-3 bg-second rounded-[12px] font-bold text-white text-sm md:text-base duration-700 relative 
           before:content-[""] before:z-[-1] before:absolute before:left-0 before:top-0 before:rounded-[12px] 
           before:bg-first before:w-0 before:h-full  before:transition-all before:duration-700 hover:before:w-full hover:text-black' >

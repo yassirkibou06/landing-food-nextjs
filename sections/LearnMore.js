@@ -13,21 +13,21 @@ const LearnMore = () => {
             initial="hidden"
             animate="show"
             viewport={{ once: false, amount: 1 }}
-            className="relative bg-gradient-six w-[85%] md:h-[85vh] p-5 md:py-5 md:px-14 rounded-seven mb-10 md:mb-52 md:grid md:grid-cols-2 md:gap-24">
+            className="relative overflow-hidden md:overflow-visible bg-gradient-six w-[85%] md:h-[85vh] p-5 md:py-5 md:px-14 rounded-seven mb-10 md:mb-52 md:grid md:grid-cols-2 md:gap-24">
                 <div className="pt-14 pr-10">
                 <motion.h2 variants={textVariant2} initial="hidden" whileInView="show" className="font-bold text-lg md:text-xl text-first mb-2 md:mb-4 pt-6">{learnSection.titleOne}</motion.h2>
                 <motion.h1 variants={textVariant2} initial="hidden" whileInView="show" className="font-bold text-2xl md:text-5xl md:mb-4 mb-3 md:pl-44 md:leading-[1.2em]">{learnSection.titleTwo}</motion.h1>
                 <motion.h3 variants={textVariant2} initial="hidden" whileInView="show" className="font-semibold text-sm md:text-base mb-3 md:mb-5">{learnSection.titleThree}</motion.h3>
-                <div className="p-5 ">
+                <div className="p-5 grid gap-2 md:block">
                 <motion.a href="https://play.google.com" target="_blank" variants={textVariant2} initial="hidden" whileInView="show"
-                    className='ml-5 z-0 md:px-7 md:py-3 px-5 py-2 border-solid rounded-[12px] border-[1px] border-fourth font-bold text-first text-[1rem] duration-700 relative 
+                    className='z-0 md:ml-5  md:px-7 md:py-3 px-5 py-2 border-solid rounded-[12px] border-[1px] border-fourth font-bold text-first text-[1rem] duration-700 relative 
                 before:content-[""] before:z-[-1] before:absolute before:left-0 before:top-0 before:rounded-[12px] cursor-pointer
                 before:bg-first before:w-0 before:h-full  before:transition-all before:duration-700 hover:before:w-full hover:before:border-1 hover:text-white'
                 >
                     {learnSection.textBtnOne}
                 </motion.a>
                 <motion.a href="https://www.apple.com/fr/app-store/" target="_blank" variants={textVariant2} initial="hidden" whileInView="show"
-                    className='btn z-0 md:px-7 md:py-3 px-5 py-2 border-solid rounded-[12px] border-[1px] border-fourth font-bold text-first text-[1rem] duration-700 relative 
+                    className='z-0 md:ml-5 md:px-7 md:py-3 px-5 py-2 border-solid rounded-[12px] border-[1px] border-fourth font-bold text-first text-[1rem] duration-700 relative 
                 before:content-[""] before:z-[-1] before:absolute before:left-0 before:top-0 before:rounded-[12px] cursor-pointer
                 before:bg-first before:w-0 before:h-full  before:transition-all before:duration-700 hover:before:w-full hover:before:border-1 hover:text-white'
                 >

@@ -25,7 +25,6 @@ const Menu = () => {
                 {
                     menuCard.map((l, index) => (
                         <motion.div
-                            drag
                             whileHover={{ scale: 1.1, originY: -1 }}
                             transition={{ duration: 0.5 }}
                             variants={fadeIn('right', 'spring', index * 0.5, 0.75)}

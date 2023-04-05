@@ -13,7 +13,7 @@ const OrderNow = () => {
             <motion.p variants={textVariant2} initial="hidden" whileInView="show" className="font-normal text-sm md:text-base text-p-color">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</motion.p>
             </div>
             <motion.a href="#" variants={textVariant2} initial="hidden" whileInView="show"
-            className='inline-flex z-10 px-5 py-2 md:px-8 md:py-3 bg-second rounded-[12px] font-bold text-white text-sm md:text-base duration-700 relative 
+            className='inline-flex z-10 mt-4 px-5 py-2 md:px-8 md:py-3 bg-second rounded-[12px] font-bold text-white text-sm md:text-base duration-700 relative 
             before:content-[""] before:z-[-1] before:absolute before:left-0 before:top-0 before:rounded-[12px] 
             before:bg-first before:w-0 before:h-full  before:transition-all before:duration-700 hover:before:w-full hover:text-black'
             >
